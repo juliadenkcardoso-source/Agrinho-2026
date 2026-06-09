@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho Tec: Irrigação Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🌱 futuro Sustentavel</div>
+        <h1>Cultivando um Futuro Sustentável</h1>
+    </header>
+
+    <main class="container">
+        <section class="calculadora">
+            <h2>Calculadora de Uso de Água</h2>
+            <p>Descubra se o seu sistema de irrigação está gastando mais do que o necessário.</p>
+            
+            <form id="agrinhoForm">
+                <div class="input-group">
+                    <label for="area">Área do Plantio (em hectares):</label>
+                    <input type="number" id="area" min="1" required placeholder="Ex: 5">
+                </div>
+
+                <div class="input-group">
+                    <label for="tempo">Tempo de Irrigação Diário (horas):</label>
+                    <input type="number" id="tempo" min="1" required placeholder="Ex: 3">
+                </div>
+
+                <button type="button" onclick="calcularConsumo()">Analisar Consumo</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="resultado-box hidden">
+            <h3>Resultado da Análise</h3>
+            <p id="consumoTexto"></p>
+            <div id="dicaSustentavel" class="dica"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Tecnologia e Sustentabilidade no Campo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

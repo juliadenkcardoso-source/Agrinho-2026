@@ -1,0 +1,115 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e7d32; /* Verde sustentável */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+/* Formulários */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #a5d6a7;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #2e7d32;
+}
+
+button {
+    background-color: #f57c00; /* Laranja para destaque */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e65100;
+}
+
+/* Resultados e Interatividade */
+.hidden {
+    display: none;
+}
+
+.resultado-box {
+    background-color: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+}
+
+.dica {
+    margin-top: 15px;
+    padding: 10px;
+    background: #fff3e0;
+    border-radius: 6px;
+    border-left: 4px solid #f57c00;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
